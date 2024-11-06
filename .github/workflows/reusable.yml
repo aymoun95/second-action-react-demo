@@ -15,7 +15,7 @@ jobs:
       - name: Get code
         run: actions/download-artifact@v3
         with:
-          key: ${{ inputs.artifact-name }}
+          name: ${{ inputs.artifact-name }}
       - name: List files
         run: ls
       - name: Output information
